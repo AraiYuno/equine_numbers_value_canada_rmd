@@ -1,6 +1,6 @@
 ---
 title: "Historical horse population in Canada"
-bibliography: r_packages_ref.bib
+bibliography: r_package_refs.bib
 params:
   province: "Alberta"
 output: 
@@ -70,7 +70,7 @@ kable(
 )
 ```
 
-Below we zoom in and look at the province of \`r params$province\`\`:
+Below we zoom in and look at the province of `r params$province`:
 
 ```{r plot province, fig.width=5, fig.height=4, fig.cap = "Number of Horses", out.width = "50%"}
 province_plot <- horse_pop %>% 
@@ -88,6 +88,5 @@ province_plot
 ```
 
 Figure 2. Horse populations for `r params$province` between 1940 - 1972.
-
 
 # References
